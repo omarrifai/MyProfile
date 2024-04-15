@@ -1,0 +1,3 @@
+[submodule "myprofile"]
+	path = myprofile
+	url = https://github.com/omarrifai/my-profile
