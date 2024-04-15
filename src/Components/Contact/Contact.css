@@ -1,0 +1,108 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.ContactMe {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ContactMe h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.ContactMe h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+
+}
+
+.ContactMe-Detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ContactMe-Detail-card {
+    width: 220px;
+    height: 254px;
+    background: lightgray;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: auto;
+    font-family: inherit;
+  }
+  
+  .ContactMe-Detail-card span {
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .ContactMe-Detail-card .detail {
+    font-weight: 400;
+    color: black;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1em;
+  }
+  .ContactMe-Detail-card .detail a{
+    font-weight: 400;
+    color: black;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1em;
+  }
+  
+  .ContactMe-Detail-card .img {
+    width: 70px;
+    height: 70px;
+    background: #e8e8e8;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+
+
+.location-icon, .phone-icon,.email-icon,.linkedin-icon {
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 50%;
+    background-color: darkcyan;
+    color: white;
+    font-size: 60px;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .ContactMe-Detail{
+        display: flex;
+        flex-direction: column;
+    }
+}
